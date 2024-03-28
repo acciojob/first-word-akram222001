@@ -1,16 +1,15 @@
 function firstWord(s) {
   // your code here
-	if(s === ''){
-		return '';
-	}
-	const spaceIndex = str.indexOf(' ');
-	if(spaceIndex === -1){
-		return s;
-	}
-	return s.substring(0, spaceIndex)
+  if (s === '') {
+    return '';
+  }
+  const spaceIndex = s.indexOf(' '); // Changed from str to s
+  if (spaceIndex === -1) {
+    return s;
+  }
+  return s.substring(0, spaceIndex);
 }
 
 // Do not change the code below
-
- const s = prompt("Enter String:");
+const s = prompt("Enter String:");
 alert(firstWord(s));
